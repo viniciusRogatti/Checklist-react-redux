@@ -62,9 +62,9 @@ export default rootReducer;
 ```
 
 *No arquivo store/index.js:*
-- [] importar `rootReducer` e usá-lo na criação da `store`
-- [] configurar o [Redux DevTools](https://github.com/reduxjs/redux-devtools)
-- [] exportar a `store`
+- [ ] importar `rootReducer` e usá-lo na criação da `store`
+- [ ] configurar o [Redux DevTools](https://github.com/reduxjs/redux-devtools)
+- [ ] exportar a `store`
 
 ```js
 import { createStore } from 'redux';
@@ -80,12 +80,12 @@ export default store;
 ```
 
 *No arquivo App.js:*
-- [] importar a `store`
-- [] definir o Provider, `<Provider store={ store }>`, para fornecer os estados a todos os componentes encapsulados em `<App />`.
+- [ ] importar a `store`
+- [ ] definir o Provider, `<Provider store={ store }>`, para fornecer os estados a todos os componentes encapsulados em `<App />`.
 
 *Na pasta actions:*
-- [] criar e exportar os actionTypes;`
-- [] criar e exportar os actions creators necessários
+- [ ] criar e exportar os actionTypes;`
+- [ ] criar e exportar os actions creators necessários
 
 *Exemplo de action types (arquivo actionTypes.js)*
 
@@ -100,15 +100,15 @@ export const minhaAction = (value) => ({ type: USER_LOGIN, value });
 ```
 
 *Nos reducers:*
-- [] criar os casos para cada action criada, retornando o devido estado atualizado
+- [ ] criar os casos para cada action criada, retornando o devido estado atualizado
 
 *Nos componentes que irão ler o estado:*
-- [] criar a função `mapStateToProps`
-- [] exportar usando o `connect`
+- [ ] criar a função `mapStateToProps`
+- [ ] exportar usando o `connect`
 
 *Nos componentes que irão modificar o estado:*
 - [ ] criar a função `mapDispatchToProps`
-- [] exportar usando o `connect`
+- [ ] exportar usando o `connect`
 
 ```js
 export default connect(mapStateToProps, mapDispatchToProps)(Component)
